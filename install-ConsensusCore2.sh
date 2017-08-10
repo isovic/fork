@@ -22,3 +22,7 @@ VERBOSE=1  pip install -v --no-deps --user .
 #              SWIG_COMMAND=$(shell . $(PREFIX)/setup-env.sh && which swig) \
 #     pbcopper_INCLUDE_DIRS=$(PREFIX)/include \
 #        pbcopper_LIBRARIES=$(PREFIX)/lib/libpbcopper.a \
+
+#1.) tell meson which python interpreter to use -DPYTHON=mypywhatever
+#2.) tell it where to install it to -Dpythoninstalldir=/wherever
+#3.) tell it where the py2.7 .pc files are with PKG_CONFIG_PATH
